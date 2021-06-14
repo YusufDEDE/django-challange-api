@@ -8,5 +8,5 @@ router.register(r'signup', CreateUserView, basename='signup/')
 urlpatterns = router.urls
 
 urlpatterns += [
-    path('me/', MeUserView.as_view(), name='ex')
+    path('me/', MeUserView.as_view(), name='me')
 ]

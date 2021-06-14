@@ -24,10 +24,27 @@ class MeUserView(APIView):
                 'username',
                 'first_name',
                 'last_name',
-            )),  # `django.contrib.auth.User` instance.
+            )),
         }
         return Response(content)
 
 
 class SearchUserView(APIView):
-    pass
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        keyword = request.query_params.get('keyword')
+
+        if keyword:
+            return Response({
+                'search_result': list(User.objects.filter(username__icontains=keyword).values(
+                    'username',
+                    'first_name',
+                    'last_name',
+                ))
+            })
+
+        return Response({
+            'error': 'Please correct query params! | /users/search?keyword=<keyword> ',
+        })

@@ -1,0 +1,154 @@
+{
+	"id": "cdd43127-d201-3f8a-75e1-9a405b53cf54",
+	"name": "django-challenge-api",
+	"description": "",
+	"order": [
+		"9fe931c2-d0ee-7fe4-ede3-01ca0e1563a5",
+		"29102eab-e257-7fb3-7e2a-38237537e398",
+		"d9873e77-2fc3-b7d3-ad6e-48e9cb7a7cf7",
+		"2717fa63-1132-955b-c70c-bac2ad48468b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1624204577188,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2717fa63-1132-955b-c70c-bac2ad48468b",
+			"headers": "Authorization: Basic am9obndpY2s6am9objEyM3F3ZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic am9obndpY2s6am9objEyM3F3ZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://django-challange-api.herokuapp.com/users/search?keyword=s",
+			"queryParams": [
+				{
+					"key": "keyword",
+					"value": "s",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "cdd43127-d201-3f8a-75e1-9a405b53cf54",
+			"data": null,
+			"dataMode": "params",
+			"name": "/users/search?keyword=s",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624205275081,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "29102eab-e257-7fb3-7e2a-38237537e398",
+			"headers": "Authorization: Basic am9obndpY2s6am9objEyM3F3ZQ==\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic am9obndpY2s6am9objEyM3F3ZQ==",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://django-challange-api.herokuapp.com/users/me/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "cdd43127-d201-3f8a-75e1-9a405b53cf54",
+			"data": [],
+			"dataMode": "raw",
+			"name": "/users/me/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624205010462,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\": \"johnwick\",\n\t\"password\": \"john123qwe\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Wick\",\n    \"email\": \"johnwick@hotmail.com\",\n    \"phone\": \"1111111111\",\n    \"about_us\": \"I'm JOHN WICK, NEVER MY KILL THE DOG!.. I'm HITMAN!\"\n}"
+		},
+		{
+			"id": "9fe931c2-d0ee-7fe4-ede3-01ca0e1563a5",
+			"headers": "Authorization: Basic am9obndpY2s6am9objEyM3F3ZQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic am9obndpY2s6am9objEyM3F3ZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://django-challange-api.herokuapp.com/users/me",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "cdd43127-d201-3f8a-75e1-9a405b53cf54",
+			"data": null,
+			"dataMode": "params",
+			"name": "/users/me",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624204779826,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d9873e77-2fc3-b7d3-ad6e-48e9cb7a7cf7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://django-challange-api.herokuapp.com/users/signup/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "cdd43127-d201-3f8a-75e1-9a405b53cf54",
+			"data": [],
+			"dataMode": "raw",
+			"name": "/users/signup/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624205216638,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\": \"saruman\",\n\t\"password\": \"saruman123qwe\",\n    \"first_name\": \"Saruman\",\n    \"last_name\": \"Sarumanovic\",\n    \"email\": \"saruman@middleearth.org\",\n    \"phone\": \"+-90369663696\",\n    \"about_us\": \"ONE DAY I HAVE MIDDLE EARH... WAIT BRO :)\"\n}"
+		}
+	]
+}
